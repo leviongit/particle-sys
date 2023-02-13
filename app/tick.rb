@@ -53,8 +53,8 @@ ExplosionParticle = Particle
   ) { |args|
     @x += @dx
     @y += @dy
-    @dx *= 0.95
-    @dy *= 0.95
+    @dx *= 0.975
+    @dy *= 0.975
     @r = @_r * (@lifetime / @_lifetime)
     @g = @_g * (@lifetime / @_lifetime)
     @b = @_b * (@lifetime / @_lifetime)
