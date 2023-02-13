@@ -7,8 +7,8 @@ class ParticleSet
     @particles.each { _1.tick(args) }.reject!(&:dead?)
   end
 
-  def <<(particle)
-    @particles << particle
+  def <<(*particles)
+    @particles.concat(particles).flatten!
     self
   end
 

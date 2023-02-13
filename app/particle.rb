@@ -46,10 +46,10 @@ class Particle
       @h,
       "pixel",
       0,
-      0xff,
-      0xff,
-      0xff,
-      0xff,
+      @a,
+      @r,
+      @g,
+      @b,
       *[nil] * 12
     )
   end
